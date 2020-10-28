@@ -32,9 +32,11 @@ public class ZeroConfDiscoveryProcess {
 
 				logger.info("mDNS Discovery -> Service resolved: {} - Address: {} - Port: {}", serviceName, serviceAddress, servicePort);
 			}
+
 			public void serviceRemoved(ServiceEvent ev) {
 				logger.info("mDNS Discovery -> Node removed: {}", ev.getName());
 			}
+
 			public void serviceAdded(ServiceEvent event) {
 				logger.info("mDNS Discovery -> Service added: {}", event.getName());
 
@@ -45,7 +47,7 @@ public class ZeroConfDiscoveryProcess {
 		
 		try {
 
-			/* Per bindare jmdns su una specifica interfaccia di rete
+			/* Used to bind JMDNS to a single interface
 			 * jmdns = JmDNS.create(NetworkInfo.getInetAddress(NetworkInfo.getNetworkAddress(NetworkInfo.IPv4)),"");
 			 */
 			
