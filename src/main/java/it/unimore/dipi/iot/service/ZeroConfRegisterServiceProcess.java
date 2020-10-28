@@ -7,6 +7,13 @@ import java.io.IOException;
 import javax.jmdns.JmDNS;
 import javax.jmdns.ServiceInfo;
 
+/**
+ * A Demo ZeroConf Service Registration application implemented using jmDNS Java Library
+ *
+ * @author Marco Picone, Ph.D. - picone.m@gmail.com
+ * @project service-discovery-playground
+ * @created 28/10/2020 - 09:19
+ */
 public class ZeroConfRegisterServiceProcess {
 
 	private final static Logger logger = LoggerFactory.getLogger(ZeroConfRegisterServiceProcess.class);
